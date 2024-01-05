@@ -27,7 +27,7 @@ function login() {
 }
 </script>
 
-<form on:submit|preventDefault={login}>
+<form on:submit|preventDefault={login} method="POST">
   <div class="mb-3">
     <label for="username" class="form-label">Username</label>
     <input type="text" bind:value={username} placeholder="username" required name="username" id="username" class="form-control" />
